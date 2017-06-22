@@ -2,18 +2,30 @@
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-
+var errorDisplayed = false;
+function fetchError(request)
+{
+if (!errorDisplayed) {
+errorDisplayed = true;
+alert("Encountered error " + request.status + ". All details and next errors will be displayed in browser's console.");
+}
+console.log(request);
+}
 
 function settext() 
 {
 var code = $.ajax({
         type: "GET",
         url: "raw",     
-        async: false 
+        async: false,
+	error: function (request, error) {
+		fetchError(request);
+	}
 }).responseText;
 
 
 $('#code').text(code);
+
 setTimeout(settext, 3000);
 }
 
