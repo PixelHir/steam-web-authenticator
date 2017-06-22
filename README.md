@@ -19,10 +19,12 @@ module.exports = {
   - **Port** is the number you want your web server going on
 
 - Do the ```npm run``` or ```node index.js```
-
-# Troubleshooting
+- If everything went correct, you can now launch browser and enter your IP address with selected port
+# FAQ
 ## Code is wrong
 That probably means your secret is wrong. I am not able to check whether your secret is valid
-
-
-*Please note that this is very very very early version and I cannot guarantee you full security.*
+## Running it on domain/subdomain
+You need reverse proxy for that, [google is your help](http://goo.gl/search/running+reverse+proxy+for+nodejs)
+```diff
+Please note that this is very very very early version and I cannot guarantee you full security.*
+```
