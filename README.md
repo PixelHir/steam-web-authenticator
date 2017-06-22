@@ -26,5 +26,5 @@ That probably means your secret is wrong. I am not able to check whether your se
 ## Running it on domain/subdomain
 You need reverse proxy for that, [google is your help](http://goo.gl/search/running+reverse+proxy+for+nodejs)
 ```diff
-Please note that this is very very very early version and I cannot guarantee you full security.*
+- Please note that this is very very very early version and I cannot guarantee you full security.*
 ```
