@@ -20,11 +20,14 @@ module.exports = {
 
 - Do the ```npm run``` or ```node index.js```
 - If everything went correct, you can now launch browser and enter your IP address with selected port
+- Path ```/``` is main page where code is refreshed with ajax every 3 seconds. Path ```/raw``` can be used for API's etc. It returns you only key, but you have to refresh manually. You need to authenticate for both of the pages 
 # FAQ
 ## Code is wrong
 That probably means your secret is wrong. I am not able to check whether your secret is valid
 ## Running it on domain/subdomain
 You need reverse proxy for that, [google is your help](http://goo.gl/search/running+reverse+proxy+for+nodejs)
+## Disabling authentication
+For now it is not possible, you can try removing it by yourself from the code
 ```diff
 - Please note that this is very very very early version and I cannot guarantee you full security.*
 ```
