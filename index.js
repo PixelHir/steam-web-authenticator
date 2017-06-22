@@ -13,7 +13,6 @@ var credentials = auth(req);
 		if(req.url == '/') {
 			fs.readFile('./index.html', function (err, html) {
 			res.end(html);
-			console.log('Index accesed');
 		});
 		} else if(req.url == '/raw') {
 			var code =  SteamTotp.generateAuthCode(config.secret);
