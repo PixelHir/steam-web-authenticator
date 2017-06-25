@@ -11,7 +11,7 @@ var credentials = auth(req);
 		res.end('Access denied');
 	} else {
 		if(req.url == '/') {
-			fs.readFile('./index.html', function (err, html) {
+			fs.readFile('./pages/index.html', function (err, html) {
 			res.end(html);
 		});
 		} else if(req.url == '/raw') {
