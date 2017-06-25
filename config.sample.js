@@ -1,6 +1,6 @@
 module.exports = {
 	username: "user",
-	password: "pass"
+	password: "pass",
 	steamusername: "user",
 	steampassword: "pass",
 	identity_secret: "",

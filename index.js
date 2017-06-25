@@ -15,7 +15,7 @@ var credentials = auth(req);
 			res.end(html);
 		});
 		} else if(req.url == '/raw') {
-			var code =  SteamTotp.generateAuthCode(config.secret);
+			var code =  SteamTotp.generateAuthCode(config.identity_secret);
 			res.end(code);
 		} else {
 			res.end('<h1>404 not found</h1>');
