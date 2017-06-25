@@ -4,7 +4,7 @@ Nodejs server for generating steam codes
 # Usage
 - Do the ``` npm install ```
 
-- Edit file config.js
+- Copy file config.sample.js to config.js and edit it
 ```javascript
 module.exports = {
         username: "user",
